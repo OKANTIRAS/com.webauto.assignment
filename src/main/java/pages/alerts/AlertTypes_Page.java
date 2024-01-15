@@ -17,6 +17,7 @@ public class AlertTypes_Page extends BasePage {
 
     @FindBy(xpath = "//button[text()='Show Confirm']")
     private WebElement showConfirmButton;
+    public void clickOnShowConfirmButton(){showConfirmButton.click();}
 
     public void clickOnShowAlertButton(){
         showAlertButton.click();

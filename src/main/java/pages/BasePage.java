@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import utils.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -20,5 +21,9 @@ public abstract class BasePage {
         PageFactory.initElements(DRIVER, this);
         DRIVER.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
+    public Alert getAlert() {
+        return DRIVER.switchTo().alert();
+    }
+
 
 }

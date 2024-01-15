@@ -24,6 +24,7 @@ public class BrowserUtils {
         }
     }
 
+
     public static void wait(int timeout){
         try{
             Thread.sleep(timeout * 1000);
@@ -35,6 +36,7 @@ public class BrowserUtils {
     public static String getTitle(){
         return Driver.getDriver().getTitle();
     }
+
 
 
 
