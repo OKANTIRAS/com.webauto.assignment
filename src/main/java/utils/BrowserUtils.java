@@ -1,6 +1,7 @@
 package utils;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class BrowserUtils {
@@ -36,6 +37,8 @@ public class BrowserUtils {
     public static String getTitle(){
         return Driver.getDriver().getTitle();
     }
+
+
 
 
 

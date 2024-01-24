@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AcceptTest extends Hooks {
     @Test
-
     public void acceptTest(){
         pages.getHomePage().clickOnWebAutomationLink();
         pages.getWebAutomationPage().clickOnDroppableLink();

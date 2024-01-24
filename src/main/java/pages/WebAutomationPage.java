@@ -60,6 +60,49 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Synchronus Resize")
     private WebElement synchronusResizeLink;
 
+    @FindBy(xpath = "//a[contains(text(),'Progress Bar')]")
+    private WebElement progressBarLink;
+
+    @FindBy(xpath = "//a[contains(text(),'Download Dialog')]")
+    private WebElement downloadDialogLink;
+
+    @FindBy(xpath = "//a[contains(text(),'Autocomplete')]")
+    private WebElement autocompleteLink;
+
+    @FindBy(xpath = "//a[contains(text(),'Accent Folding')]")
+    private WebElement accentFoldingLink;
+
+    @FindBy(linkText = "Menu")
+    private WebElement menuLink;
+
+    @FindBy(xpath = "//a[contains(text(),'Icons')]")
+    private WebElement iconsLink;
+
+    @FindBy(linkText = "Datepicker")
+    private WebElement datePickerLink;
+
+    @FindBy(linkText = "Select Date Range")
+    private WebElement selectDateRangeLink;
+
+    @FindBy(xpath = "//a[contains(text(),'Control Group')]")
+    private WebElement controlGroupLink;
+
+    @FindBy(xpath = "//a[contains(text(),'Toolbar')]")
+    private WebElement toolbarLink;
+
+    @FindBy(xpath = "//a[(text()='Dialog')]")
+    private WebElement dialogLink;
+
+    @FindBy(xpath = "//a[(text()='Modal Form')]")
+    private WebElement modalFormLink;
+
+
+
+
+
+
+
+
 
 
 
@@ -146,6 +189,32 @@ public class WebAutomationPage extends BasePage {
     public void clickSynchronousResize() {
         synchronusResizeLink.click();
     }
+
+    public void clickProgressBar(){progressBarLink.click();}
+
+    public void clickDownLoadDialogLink(){downloadDialogLink.click();}
+
+    public void clickAutocompleteLink(){autocompleteLink.click();}
+
+    public void clickAccentFoldingLink(){accentFoldingLink.click();}
+
+    public void clickMenuLink(){menuLink.click();}
+
+    public void clickIconsLink(){iconsLink.click();}
+
+    public void clickDatePickerLink(){datePickerLink.click();}
+
+    public void clickSelectDatePickerLink(){selectDateRangeLink.click();}
+
+    public void clickControlGroupLink(){controlGroupLink.click();}
+
+    public void clickToolBar(){toolbarLink.click();}
+
+    public void clickDialogLink(){dialogLink.click();};
+
+    public void clickModalFormLink(){modalFormLink.click();}
+
+
 
 }
 

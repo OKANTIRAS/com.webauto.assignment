@@ -1,10 +1,15 @@
 package utils;
 
+import controlGroup.Toolbar;
+import datePicker.SelectDateRangePage;
+import dialog.ModalFormPage;
+import menu.IconsPage;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerts.AlertTypes_Page;
 import pages.alerts.ShowAlertPage;
 import pages.alerts.ShowConfirmPage;
+import pages.autoComplete.AccentFoldingPage;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovementPage;
 import pages.draggable.Draggable_DefFunc_Page;
@@ -20,8 +25,7 @@ import pages.resizable.SynchronousResizePage;
 import pages.resizable.TextAreaPage;
 import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.SerializePage;
-
-import java.awt.*;
+import progressBar.DownloadDialog;
 
 public class Pages {
 
@@ -65,6 +69,18 @@ public class Pages {
 
     private SynchronousResizePage synchronousResizePage;
 
+    private DownloadDialog downloadDialog;
+
+    private AccentFoldingPage accentFoldingPage;
+
+    private IconsPage iconsPage;
+
+    private SelectDateRangePage selectDateRangePage;
+
+    private Toolbar toolbar;
+
+    private ModalFormPage modalFormPage;
+
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -86,6 +102,12 @@ public class Pages {
         showConfirmPage = new ShowConfirmPage();
         normalIframePage = new NormalIframePage();
         synchronousResizePage = new SynchronousResizePage();
+        downloadDialog = new DownloadDialog();
+        accentFoldingPage = new AccentFoldingPage();
+        iconsPage = new IconsPage();
+        selectDateRangePage = new SelectDateRangePage();
+        toolbar = new Toolbar();
+        modalFormPage = new ModalFormPage();
 
 
     }
@@ -153,4 +175,16 @@ public class Pages {
     }
 
     public SynchronousResizePage getSynchronousResizePage(){return synchronousResizePage;}
+
+    public DownloadDialog getDownloadDialog(){return downloadDialog;}
+
+    public AccentFoldingPage getAccentFoldingPage(){return accentFoldingPage;}
+
+    public IconsPage getIconsPage(){return iconsPage;}
+
+    public SelectDateRangePage getSelectDateRangePage(){return selectDateRangePage;}
+
+    public Toolbar getToolbar(){return toolbar;}
+
+    public ModalFormPage getModalFormPage(){return modalFormPage;}
 }
